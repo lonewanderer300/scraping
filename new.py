@@ -11,7 +11,7 @@ st.set_page_config(page_title="Monitoring Artikel Kesehatan Ayam", layout="wide"
 st.title("Monitoring Artikel Kesehatan Ayam dari PoultryIndonesia")
 
 # Koneksi ke MongoDB
-client = MongoClient("mongodb+srv://alvinmasterl4d2:fHyKAXo8pdZTB4sL@cluster0.knwgtz8.mongodb.net/")
+client = MongoClient("mongodb+srv://alvinmasterl4d2:fHyKAXo8pdZTB4sL@cluster0.knwgtz8.mongodb.net/monitoring_ayam?retryWrites=true&w=majority")
 db = client["monitoring_ayam"]
 collection = db["berita_kesehatan_poultryindonesia"]
 
